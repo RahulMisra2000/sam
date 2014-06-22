@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - This Old Spouse Handyman Service</title>    
+    @Styles.Render("~/Content/bootstrap")
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("ThisOldSpouse", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Service", "Service", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+
+        <div class="jumbotron">
+            <h2>This Old Spouse Handyman Service</h2>
+            <p class="lead">Subsidiary of TOS Enterprises, LLC</p>
+        </div>
+
+        @RenderBody()
+        <hr />
+
+        <ul id="webticker">
+            <li id='item1'>
+                If a needed service is not listed please phone THIS OLD SPOUSE at (561) 447-9485.
+            </li>            
+            <li id='item2'>
+                We serve the following Florida Communities: Boca Raton, Boynton Beach, Coral Springs, Coconut Creek, Deerfield Beach, Delray Beach, Lake Worth and Pompano Beach.
+            </li>            
+        </ul>
+
+        <hr />
+
+        <footer>
+            <p>&copy; @DateTime.Now.Year - This Old Spouse Handyman Service</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
