@@ -242,6 +242,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\jquery.webticker.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\peer.js" />
+    <Content Include="Scripts\webrtccustom.js" />
     <Content Include="Scripts\webtickercustom.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
@@ -260,6 +262,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Service.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\webrtctest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

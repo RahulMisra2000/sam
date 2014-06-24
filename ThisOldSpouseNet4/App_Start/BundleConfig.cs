@@ -20,6 +20,10 @@ namespace ThisOldSpouseNet4
                         "~/Scripts/jquery.webticker.js",
                         "~/Scripts/webtickercustom.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/peer").Include(
+                      "~/Scripts/peer.js",
+                      "~/Scripts/webrtccustom.js"));
+
             //bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
             //            "~/Scripts/jquery-ui-{version}.js"));
 
